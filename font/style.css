@@ -1,0 +1,225 @@
+@font-face {
+    font-family: 'lovelacemedium';
+    src: url('font/lovelace_medium-webfont.woff2') format('woff2'),
+         url('font/lovelace_medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+	font-family: 'lovelacemedium';
+	margin:0px;
+}
+
+a{
+	text-decoration: none;
+}
+.menu{
+	position: fixed;
+	width:98%;
+	background-color:#DC4824;
+	padding: 10 20 10 20;
+	display: flex;
+	justify-content: space-between;
+	
+}
+.burger{
+	transition: transform .7s ease-in-out;
+}
+.burger:hover{
+	transform: rotate(180deg);
+	cursor: pointer;
+}
+.logo{
+	width:144px;
+	height:78px;
+}
+
+.titre{
+	font-size:200px;
+	-webkit-animation: fadein 2s;
+}
+
+@-webkit-keyframes fadein
+{
+    from {
+        opacity:0;
+        position:0;
+    }
+    to {
+        opacity:1;
+        position: 50px;
+    }
+}
+
+.accueil_haut{
+	height:50%;
+	background-color:#DC4824;
+	color:white;
+	display:flex;
+	justify-content: center;
+	align-items:center;
+}
+
+.accueil_bas{
+	height:50%;
+	background-color:#E7B1C9;
+	color:#DC4824;
+	display:flex;
+}
+
+
+.button_discover{
+	font-family: 'lovelacemedium';
+	font-size:70px;
+	text-align:center;
+	border:4px solid #DC4824;
+	background-color:#E7B1C9;
+	box-shadow:inset 0 0 0 0 #DC4824;
+	color:#DC4824;
+	padding:10px;
+	padding-left:25px;
+	padding-right:25px;
+	margin:auto;
+	transition: ease-out 0.3s;
+
+}
+
+.button_discover:hover{
+	cursor:pointer;
+	box-shadow:inset 700px 0 0 0 #DC4824;
+	color:#E7B1C9;
+
+}
+
+
+.projets{
+	background-color:#E7B1C9;
+	scroll-behavior: smooth;
+	display:flex;
+	flex-grow: 1;
+	max-height: 100%;
+}
+
+/* ------------------------ photos gauche---------------------  */
+
+.projets div{
+	width:50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	flex-grow:1;
+}
+
+.P_defaut{
+	background-image: url("img/P1.png");
+}
+
+.P_2000{
+	background-image: url("img/P2000.png");
+	display:none;
+}
+
+.P_belt{
+	background-image: url("img/Pbelt.png");
+	display:none;
+}
+
+.P_pouce{
+	background-image: url("img/Ppouce.png");
+	display:none;
+}
+
+.P_wired{
+	background-image: url("img/Pwired.png");
+	display:none;
+}
+
+.P_mouvement{
+	background-image: url("img/Pmouvement.png");
+	display:none;
+}
+
+.P_griffe{
+	background-image: url("img/Pgriffe.png");
+	display:none;
+}
+
+.P_kerbox{
+	background-image: url("img/Pkerbox.png");
+	display:none;
+}
+
+.P_affinités{
+	background-image: url("img/Paffinités.png");
+	display:none;
+}
+
+/* ------------------------ boutons droite ---------------------  */
+
+.menu_projets{
+	display:flex;
+	flex-direction: column;
+	flex-grow:1;
+	margin-top:10%;
+}
+
+.menu_projets button{
+	font-family: 'lovelacemedium';
+	font-size:3.5rem;
+	text-align:center;
+	border:4px solid #DC4824;
+	background-color:#E7B1C9;
+	color:#DC4824;
+	padding:auto;
+	padding-left:40;
+	margin:0;
+	margin-top:-4px;
+	align-self:flex-end;
+	text-align:left;
+	flex-grow:1;
+	transition: width 1s;
+}
+
+.menu_projets button:hover{
+	width:140%;
+	background-color:#F1EFE5;
+	cursor:pointer;
+}
+.B_2000{
+	width:110%;
+}
+
+.B_2000:hover + .P_2000{
+	display:block;
+}
+.B_2000:hover + .P_defaut{
+	display:none;
+}
+.B_belt{
+	width:120%;
+}
+
+.B_pouce{
+	width:109%;
+}
+
+.B_wired{
+	width:114%;
+}
+
+.B_mouvement{
+	width:112%;
+}
+
+.B_griffe{
+	width:108%;
+}
+
+.B_kerbox{
+	width:113%;
+}
+
+.B_affinités{
+	width:117%;
+}

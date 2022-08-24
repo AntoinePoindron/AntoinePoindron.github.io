@@ -1,0 +1,60 @@
+<html>
+ <head>
+ 	<meta charset="UTF-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	<title>Marine Garçon</title>
+ 	<link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+ 	<script>
+ 		var a;
+ 		function show_hide()
+ 		{
+ 			if (a==1)
+ 			{
+ 				document.getElementByClassName("P_2000").style.display="inline";
+ 				return a=0;
+ 			}
+ 			else
+ 			{
+ 				document.getElementByClassName("P_2000").style.display="none";
+ 			}
+ 		}
+ 	</script>
+ 	<div>
+ 		<div class="menu">
+ 			<img class="logo" src="img/logo.png">
+ 			<img class="burger" src="img/étoile.svg">
+ 		</div>
+ 		<div class="accueil_haut">
+ 			<h1 class="titre">Hello</h1>
+ 		</div>
+ 		<div class="accueil_bas">
+ 			<a href="#projets" class="button_discover">
+ 				Discover my work
+ 			</a>
+ 		</div>
+ 		<div class="projets" id="projets">
+	 		<div class="P_defaut"></div>
+	 		<div class="P_2000"></div>
+	 		<div class="P_belt"></div>
+	 		<div class="P_pouce"></div>
+	 		<div class="P_wired"></div>
+	 		<div class="P_mouvement"></div>
+	 		<div class="P_griffe"></div>
+	 		<div class="P_kerbox"></div>
+	 		<div class="P_affinités"></div>
+	 		<div class="menu_projets">
+	 			<button class="B_2000"> 2000's </button>
+	 			<button class="B_belt"> La vie est belt </button>
+	 			<button class="B_pouce"> Pouce </button>
+	 			<button class="B_wired"> Wired </button>
+	 			<button class="B_mouvement"> Mouvement </button>
+	 			<button class="B_griffe"> La Griffe </button>
+	 			<button class="B_kerbox"> Kerbox </button>
+	 			<button class="B_affinités"> Affinités </button>	
+	 		</div>
+	 	</div>		
+ 	</div>
+ </body>
+</html>
