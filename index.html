@@ -1,0 +1,57 @@
+<html>
+ <head>
+ 	<meta charset="UTF-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	<title>Marine Garçon</title>
+ 	<link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+ 	<script>
+ 		var currentimage="P_defaut";
+ 		function changeimage(image)
+		{
+		    document.getElementById(currentimage).style.display="none";
+		    currentimage = image;
+		    document.getElementById(image).style.display="inline";
+		}
+ 	</script>
+ 	<div>
+ 		<div class="menu">
+ 			<a href="index.html"><img class="logo" src="img/logo.png"></a>
+ 			<a href="menu.html"><img class="burger" src="img/étoile.svg"></a>
+ 		</div>
+ 		<div class="accueil_haut">
+ 			<h1 class="titre">Hello</h1>
+ 		</div>
+ 		<div class="accueil_bas">
+ 			<a href="#projets" class="button_discover">
+ 				Discover my work
+ 			</a>
+ 		</div>
+ 		<div class="projets" id="projets">
+	 		<div id="P_defaut" class="P_defaut"></div>
+	 		<div id="P_2000" class="P_2000"></div>
+	 		<div id="P_belt" class="P_belt"></div>
+	 		<div id="P_pouce" class="P_pouce"></div>
+	 		<div id="P_wired" class="P_wired"></div>
+	 		<div id="P_mouvement" class="P_mouvement"></div>
+	 		<div id="P_griffe" class="P_griffe"></div>
+	 		<div id="P_kerbox" class="P_kerbox"></div>
+	 		<div id="P_affinités" class="P_affinités"></div>
+	 		<div class="menu_projets">
+	 			<a href="2000.html" onmouseover="changeimage('P_2000')" onmouseout="changeimage('P_defaut')" class="B_2000"> 2000's </a>
+	 			<a href="Lavieestbelt.html" onmouseover="changeimage('P_belt')" onmouseout="changeimage('P_defaut')" class="B_belt"> La vie est belt </a>
+	 			<a href="Pouce.html" onmouseover="changeimage('P_pouce')" onmouseout="changeimage('P_defaut')" class="B_pouce"> Pouce </a>
+	 			<a href="Wired.html"onmouseover="changeimage('P_wired')" onmouseout="changeimage('P_defaut')" class="B_wired"> Wired </a>
+	 			<a href="Mouvement.html" onmouseover="changeimage('P_mouvement')" onmouseout="changeimage('P_defaut')" class="B_mouvement"> Mouvement </a>
+	 			<a href="LaGriffe.html" onmouseover="changeimage('P_griffe')" onmouseout="changeimage('P_defaut')" class="B_griffe"> La Griffe </a>
+	 			<a href="Kerbox.html" onmouseover="changeimage('P_kerbox')" onmouseout="changeimage('P_defaut')" class="B_kerbox"> Kerbox </a>
+	 			<a href="Affinités.html" onmouseover="changeimage('P_affinités')" onmouseout="changeimage('P_defaut')" class="B_affinités"> Affinités </a>	
+	 		</div>
+	 	</div>		
+ 	</div>
+ </body>
+ <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+ <script type="text/javascript" src="slick/slick.min.js"></script>
+ <script type="text/javascript" src="js/main.js"></script>
+</html>

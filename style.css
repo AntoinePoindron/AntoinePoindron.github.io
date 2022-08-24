@@ -1,0 +1,542 @@
+@font-face {
+    font-family: 'lovelacemedium';
+    src: url('font/lovelace_medium-webfont.woff2') format('woff2'),
+         url('font/lovelace_medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+	font-family: 'lovelacemedium';
+	margin:0px;
+	cursor: url(img/Cursor.png), auto;
+	overflow-x:hidden;	
+}
+
+a{
+	text-decoration: none;
+	color:inherit;
+}
+
+html{
+	scroll-behavior: smooth;
+	
+}
+.menu_fixe{
+	z-index: 999;
+}
+.menu{
+	position: fixed;
+	width:98%;
+	padding: 10 20 10 20;
+	display: flex;
+	justify-content: space-between;
+}
+
+.logoMenu{
+	padding: 10 20 10 20;
+
+}
+
+.logo:hover{
+	cursor: url(img/Cursor.png), auto;
+}
+
+.burger{
+	transition: transform .7s ease-in-out;
+	float:right;
+	margin-right:10px;
+	right:10px;
+}
+
+.burger:hover{
+	cursor: url(img/Cursor.png), auto;
+	transform: rotate(180deg);
+}
+
+
+.titre{
+	font-size:200px;
+	-webkit-animation: fadein 2s;
+}
+
+
+@-webkit-keyframes fadein
+{
+    from {
+        opacity:0;
+        position:0;
+    }
+    to {
+        opacity:1;
+        position: 50px;
+    }
+}
+
+.accueil_haut{
+	height:50%;
+	background-color:#DC4824;
+	color:white;
+	display:flex;
+	justify-content: center;
+	align-items:center;
+}
+
+.accueil_bas{
+	height:50%;
+	background-color:#E7B1C9;
+	color:#DC4824;
+	display:flex;
+}
+
+
+.button_discover{
+	font-family: 'lovelacemedium';
+	font-size:70px;
+	text-align:center;
+	border:4px solid #DC4824;
+	background-color:#E7B1C9;
+	box-shadow:inset 0 0 0 0 #DC4824;
+	color:#DC4824;
+	padding:10px;
+	padding-left:25px;
+	padding-right:25px;
+	margin:auto;
+	transition: ease-out 0.3s;
+
+}
+
+.button_discover:hover{
+	box-shadow:inset 700px 0 0 0 #DC4824;
+	color:#E7B1C9;
+	cursor: url(img/Cursor.png), auto;
+
+}
+
+
+.projets{
+	background-color:#E7B1C9;
+	scroll-behavior: smooth;
+	display:flex;
+	flex-grow: 1;
+	height: 100%;
+}
+
+/* ------------------------ photos gauche---------------------  */
+
+.projets div{
+	width:50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	flex-grow:1;
+}
+
+.P_defaut{
+	background-image: url("img/P1.png");
+}
+
+.P_2000{
+	background-image: url("img/P2000.png");
+	display:none;
+}
+
+.P_belt{
+	background-image: url("img/Pbelt.png");
+	display:none;
+}
+
+.P_pouce{
+	background-image: url("img/Ppouce.png");
+	display:none;
+}
+
+.P_wired{
+	background-image: url("img/Pwired.png");
+	display:none;
+}
+
+.P_mouvement{
+	background-image: url("img/Pmouvement.png");
+	display:none;
+}
+
+.P_griffe{
+	background-image: url("img/Pgriffe.png");
+	display:none;
+}
+
+.P_kerbox{
+	background-image: url("img/Pkerbox.png");
+	display:none;
+}
+
+.P_affinités{
+	background-image: url("img/Paffinités.png");
+	display:none;
+}
+
+/* ------------------------ boutons droite ---------------------  */
+
+.menu_projets{
+	display:flex;
+	flex-direction: column;
+	flex-grow:1;
+	margin-top:10%;
+}
+
+.menu_projets a{
+	font-family: 'lovelacemedium';
+	font-size:3.3rem;
+	text-align:center;
+	padding-left:60px;
+	margin:0;
+	align-self:flex-end;
+	text-align:left;
+	flex-grow:1;
+	transition: width 1s;
+	display: flex;
+    align-items: center;
+}
+
+.menu_projets a:hover{
+	width:140%;
+	background-color:#F1EFE5;
+	cursor: url(img/Cursor.png), auto;
+}
+
+.B_2000{
+	width:110%;
+	background-color:#DC4824;
+	color:#E7B1C9;
+}
+
+.B_belt{
+	width:120%;
+	background-color:#E7B1C9;
+	color:#DC4824;
+}
+
+.B_pouce{
+	width:109%;
+	background-color:#DC4824;
+	color:#E7B1C9;
+}
+
+.B_wired{
+	width:114%;
+	background-color:#E7B1C9;
+	color:#DC4824;
+}
+
+.B_mouvement{
+	width:112%;
+	background-color:#DC4824;
+	color:#E7B1C9;
+}
+
+.B_griffe{
+	width:108%;
+	background-color:#E7B1C9;
+	color:#DC4824;
+}
+
+.B_kerbox{
+	width:113%;
+	background-color:#DC4824;
+	color:#E7B1C9;
+}
+
+.B_affinités{
+	width:117%;
+	background-color:#E7B1C9;
+	color:#DC4824;
+}
+
+/* -------------- Pages internes -------------- */
+
+.contenu_projets{
+	display:flex;
+	height:100%;
+	background-color:#E7B1C9;
+}
+
+.menu_fixe{
+	width:98%;
+	padding: 10 20 10 20;
+	display: flex;
+	position:absolute;
+	justify-content: space-between;
+	
+}
+
+.projet_gauche {
+	background-color:#F1EFE5;
+	width:50%;
+	display:flex;
+	flex-direction: column;
+}
+
+.projet_gauche_haut{
+	background-color:#DC4824;
+	
+	text-align: center;
+	display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center
+    
+}
+
+
+.projet_gauche_bas{
+	padding-left:100px;
+	background-color:#E7B1C9;
+	height:50vh;
+	display:flex;
+	flex-direction:column;
+    justify-content:space-between;
+    justify-content: center;
+}
+
+.titre_projet{
+	color:#F1EFE5;
+	font-size: 100px;
+	margin:0px;
+}
+
+.catégories_projet{
+	color:white;
+}
+
+.desc_projet{
+	color:#DC4824;
+	width:70%;
+}
+
+.img_projet_defaut{
+    width: 100%;
+    object-fit: cover;
+}
+
+.bouton_projects{
+	border: 2px solid #F1EFE5;
+	padding:10 20 10 20;
+	color:#F1EFE5;
+	transition:0.3s;
+}
+
+.bouton_projects:hover{
+	color:#DC4824;
+	background-color:#F1EFE5;
+	cursor: url(img/Cursor.png), auto;
+}
+
+/* ---------------------- Page menu ------------------------*/
+
+.menu_actif{
+	height: 100%;
+	display:flex;
+}
+
+.menu_actif_gauche{
+	background-color:#DC4824;
+	width:50%;
+}
+
+.menu_actif_droite{
+	background-color:#E7B1C9;
+	width:50%;
+	display:flex;
+	flex-direction: column;
+	padding:50px;
+}
+
+.bouton_menu_actif_droite{
+	font-family: 'lovelacemedium';
+	font-size:50px;
+	color:white;
+	text-align:right;
+	transition:0.5s;
+}
+
+.bouton_menu_actif_droite:hover{
+	color:#DC4824;
+	cursor: url(img/Cursor.png), auto;
+}
+
+/* -------------------- Contact ---------------------*/
+
+.contact_projet_gauche_bas{
+	height:60vh;
+}
+
+.contact_txt1{
+	color:#DC4824;
+	padding-left:40px;
+	background-color:#E7B1C9;
+	margin:0;
+	height:15vh;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact_txt2{
+	background-color:#DC4824;
+	color:#E7B1C9;
+	padding-left:40px;
+	text-decoration:none;
+	height:15vh;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.liens{
+	color:red;
+}
+
+/* -------------------- Slider ---------------------*/
+
+.slick_slider .item_slider{
+	width:350px;
+	height:250px;
+	margin::50px;
+}
+
+.slick_slider .item_slider img{
+	width:350px;
+	height:250px;
+}
+
+.fade{
+	height:100vh;
+	object-fit:cover;
+	z-index:2;
+	background-color:#E7B1C9;
+	width:50%;
+	display:flex;
+	align-items: center;
+	overflow:hidden;
+}
+
+.fade div img{
+	width:100%;
+}
+
+
+/* -------------------- Mobile ---------------------*/
+
+@media all and (max-device-width: 480px)
+{
+
+.menu {
+    position: fixed;
+    padding: 10 20 10 20;
+    display: flex;
+    justify-content: space-between;
+    width:86%;
+}
+
+.logo{
+	width:50%;
+}
+
+.logoMenu{
+	width:50%;
+}
+.burger{
+	width:60%;
+}
+
+.projet{
+	background-color: #E7B1C9;
+	scroll-behavior: smooth;
+	display: flex;
+	flex-direction: row;
+	max-height: 100%;
+}
+
+.projets div{
+	width:100%;
+}
+
+.menu_projets{
+	-webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);     
+    transform: rotate(90deg) translateY(100px);
+    overflow-x: scroll;
+
+}
+.menu_projets a {
+    font-family: 'lovelacemedium';
+    font-size: 30px;
+    text-align: center;
+    padding-left: 60px;
+    margin: 0;
+    align-self: flex-end;
+    text-align: left;
+    transition: width 1s;
+}
+
+.titre {
+    font-size: 100px;
+    -webkit-animation: fadein 2s;
+}
+
+.button_discover {
+    font-family: 'lovelacemedium';
+    font-size: 40px;
+    text-align: center;
+    border: 4px solid #DC4824;
+    background-color: #E7B1C9;
+    box-shadow: inset 0 0 0 0 #dc4824;
+    color: #DC4824;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right:15px;
+    margin-left:15px;
+    transition: ease-out 0.3s;
+}
+
+
+/* ----------------- Page interne ----------------------*/
+
+.contenu_projets{
+	flex-direction: column;
+}
+.fade{
+	width:100%
+}
+.projet_gauche{
+	width:100%;
+}
+
+.titre_projet{
+	font-size:70px;
+}
+.desc_projet{
+	width:auto;
+}
+
+.projet_gauche_haut {
+    padding: 100 20 20 20;
+
+
+}
+
+.projet_gauche_bas {
+    padding: 20px;
+    background-color: #E7B1C9;
+    height: 100%;
+
+}
+
+
+/* ----------------- Page Menu ----------------------*/
+
+}
+
